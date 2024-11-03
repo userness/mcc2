@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Minecraft';
+  src: url('https://cdn.jsdelivr.net/gh/South-Paw/typeface-minecraft@master/font/minecraft.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.minecraft-font {
+  font-family: 'Minecraft', monospace;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.command-input {
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid #555;
+  color: #fff;
+}
+
+.suggestion {
+  @apply cursor-pointer hover:bg-gray-700 px-2 py-1;
+}
+
+.syntax-player { color: #55FFFF; }
+.syntax-number { color: #FF55FF; }
+.syntax-string { color: #FFFF55; }
+.syntax-keyword { color: #55FF55; }
+.syntax-bracket { color: #FFFFFF; }
